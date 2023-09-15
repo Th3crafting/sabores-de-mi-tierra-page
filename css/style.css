@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Symbols', sans-serif;
+    color: #fff;
+    background-color: #222;
+}
+
+/*    Estilos del header de la página    */
+
+.nav_container{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 105px;
+    display: flex;
+    border-bottom: 1px solid #fff;
+}
+
+.titulo_pagina{
+    font-family: 'Kalam', cursive;
+    font-weight: 400;
+    font-size: 65px;
+    width: 50%;
+    align-items: center;
+    text-align: center;
+}
+
+.nav_enlaces{
+    list-style: none;
+    display: flex;
+    width: 48%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.nav_enlaces a{
+    text-decoration: none;
+}
+
+/*    Estilos de la parte del main    */
+
+.informacion{
+    z-index: 0;
+    width: 100%;
+    margin: 105px 0 0;
+    display: flex;
+}
+
+.parte_izquierda{
+    position: absolute;
+    left: 0;
+    width: 42%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff
+}
+
+.parte_izquierda img{
+    background-size: cover;
+}
+
+.parte_derecha{
+    position: absolute;
+    right: 0;
+    width: 56%;
+    padding: 0 40px;
+}
+
+.texto_informativo{
+    text-align: center;
+}
+
+.texto_informativo h2{
+    margin: 0;
+    font-size: 50px;
+}
