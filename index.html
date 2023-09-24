@@ -10,17 +10,17 @@
     <script src="https://kit.fontawesome.com/005d86335c.js" crossorigin="anonymous"></script>
     <title>Sabores de mi tierra</title>
 </head>
-<body>
+<body class="contenedor_principal">
     <header>
-        <nav class="nav_container">
+        <nav id="navContainer" class="nav_container">
             <h1 class="titulo_pagina">Sabores de mi tierra.</h1>
             <ul class="nav_enlaces">
-                <li><a href="">Inicio</a></li>
+                <li><a href="./index.html">Inicio</a></li>
                 <li><a href="#tituloSeccionRecetas">Recetas</a></li>
-                <li><a href="">Departamentos</a></li>
-                <li><a href=""></a>Receta del dia</li>
-                <li><a href="">Sobre nosotros</a></li>
-                <li><a href="">Contactanos</a></li>
+                <li><a href="#tituloSeccionDepartamentos">Departamentos</a></li>
+                <li><a href="#tituloSeccionRecetaDia">Receta del dia</a></li>
+                <li><a href="#tituloSeccionNosotros">Sobre nosotros</a></li>
+                <li><a href="#tituloSeccionContacto">Contactanos</a></li>
             </ul>
         </nav>
     </header>
@@ -30,62 +30,189 @@
                 <img class="img_emp" src="./assets/img/empanas-fondo.png" alt="Fondo imagen empanadas">
             </aside>
             <aside class="parte_derecha">
-                    <div class="fondo_imformacion">
-                        <img src="" alt="">
-                    </div>
-                    <article class="texto_informativo">
-                        <h2>LAS MEJORES RECETAS COLOMBIANAS</h2>
-                        <p>¡Bienvenidos a nuestra aventura a través de Colombia!</p>
-                        <p>Sumérgete en la riqueza de la gastronomía colombiana mientras exploramos los sabores auténticos de platos tradicionales.<br>Desde las exuberantes selvas hasta las altas montañas, te llevaremos en un viaje para descubrir la esencia de nuestra cultura através de los ingredientes frescos y las recetas que han sido transmitidas de generación en generación.<br>Cada plato cuenta una historia, y aquí te brindamos no solo las recetas detalladas, sino que también videos paso a paso que te guiarán en el proceso de preparación.<br>Únete a nosotros en esta experiencia para saborear la autenticidad de Colombia en tu propia cocina.</p>
-                    </article>
+                <article class="texto_informativo">
+                    <h2>LAS MEJORES RECETAS COLOMBIANAS</h2>
+                    <p>¡Bienvenidos a nuestra aventura a través de Colombia!</p>
+                    <p>Sumérgete en la riqueza de la gastronomía colombiana mientras exploramos los sabores auténticos de platos tradicionales.<br>Desde las exuberantes selvas hasta las altas montañas, te llevaremos en un viaje para descubrir la esencia de nuestra cultura através de los ingredientes frescos y las recetas que han sido transmitidas de generación en generación.<br>Cada plato cuenta una historia, y aquí te brindamos no solo las recetas detalladas, sino que también videos paso a paso que te guiarán en el proceso de preparación.<br>Únete a nosotros en esta experiencia para saborear la autenticidad de Colombia en tu propia cocina.</p>
+                </article>
             </aside>
         </section>
         <section class="recetas">
             <h2 id="tituloSeccionRecetas" class="titulo_seccion">RECETAS</h2>
-            <article class="carta_receta">
-                <img src="" alt="">
-                <h3>BANDEJA PAISA</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, fuga!</p>
-            </article>
-            <article class="carta_receta">
-                <img src="" alt="">
-                <h3>EMPANADA DE POLLO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse, earum?</p>
-            </article>
-            <article class="carta_receta">
-                <img src="" alt="">
-                <h3>AREPAS DE QUESO COLOMBIANAS</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, blanditiis.</p>
-            </article>
-            <article class="carta_receta">
-                <img src="" alt="">
-                <h3>AJIACO</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic, natus!</p>
-            </article>
-            <article class="carta_receta">
-                <img src="" alt="">
-                <h3>ARROZ CON POLLO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, dolorum!</p>
-            </article>
-            <article class="carta_receta">
-                <img src="" alt="">
-                <h3>ARROZ DE LECHE</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, consequatur?</p>
-            </article>
-            <article class="carta_receta">
-                <img src="" alt="">
-                <h3>CHANGUA</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero, deleniti?</p>
-            </article>
-            <article class="carta_receta">
-                <img src="" alt="">
-                <h3>TAMAL TOLIMENSE</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, fugiat.</p>
-            </article>
+            <div class="contenedor_cartas">
+                <article class="carta_receta">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>BANDEJA PAISA</h3>
+                    <p>Probablemente, la bandeja paisa sea el plato típico colombiano más conocido internacionalmente y aunque es una bomba de calorías, es una delicia imposible de resistir.</p>
+                </article>
+                <article class="carta_receta">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>EMPANADA DE POLLO</h3>
+                    <p>Sumérgete en el sabor colombiano con nuestras empanadas de pollo crujientes por fuera, rellenas de sazonado pollo por dentro ¡Una experiencia única en cada mordisco!</p>
+                </article>
+                <article class="carta_receta">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>AREPAS DE QUESO COLOMBIANAS</h3>
+                    <p>Descubrir la perfección de nuestras arepas colombianas, doradas, esponjosas y rellenas de queso derretido. Una delicia que combina tradición y sabor en cada bocado.</p>
+                </article>
+                <article class="carta_receta">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>AJIACO</h3>
+                    <p>Plato emblemático que combina tiernas carnes, papas y sabores que te transportan a las montañas andinas.</p>
+                </article>
+                <article class="carta_receta">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>ARROZ CON POLLO</h3>
+                    <p>Una mezcla perfecta de arroz, tiernos trozos de pollo y sabrosas especias que te transportarán directamente a la mesa de Colombia.</p>
+                </article>
+                <article class="carta_receta">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>ARROZ DE LECHE</h3>
+                    <p>Dulce y delicioso arroz cocido a la perfección en leche y condimentos, cada cucharada es un abrazo cálido y reconfortante.</p>
+                </article>
+                <article class="carta_receta">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>CHANGUA</h3>
+                    <p>Reconfortante, tradicional y cálido con ingredientes tan simples como leche, huevo y cilantro, este plato ofrece una experiencia única de sabor y textura.</p>
+                </article>
+                <article class="carta_receta">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>TAMAL TOLIMENSE</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, fugiat.</p>
+                </article>
+            </div>
+        </section>
+        <section class="departamentos">
+            <h2 id="tituloSeccionDepartamentos" class="titulo_seccion">Departamentos</h2>
+            <div class="contenedor_cartas">
+                <article class="carta_departamento">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>Cundinamarca</h3>
+                    <h4>Bogotá</h4>
+                </article>
+                <article class="carta_departamento">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>Bolivar</h3>
+                    <h4>Cartagena</h4>
+                </article>
+                <article class="carta_departamento">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>Nariño</h3>
+                    <h4>Pasto</h4>
+                </article>
+                <article class="carta_departamento">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></div>
+                    <h3>Antioquia</h3>
+                    <h4>Medellín</h4>
+                </article>
+            </div>
+        </section>
+        <section class="receta_del_dia">
+            <h2 id="tituloSeccionRecetaDia" class="titulo_seccion">Receta del Día</h2>
+            <div class="contenedor_receta_dia">
+                <article class="header_receta_dia">
+                    <img src="./assets/img/example-food.avif" alt="">
+                    <div class="sombreado_cartas"></>
+                    <h3>Bandeja paisa</h3>
+                    <h4>Ingredientes</h4>
+                    <div class="contenedor_listas">
+                        <ul class="lista_izquierda">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                        <ul class="lista_derecha">
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div>
+                </article>
+                <article class="contenedor_preparacion">
+                    <h3>Preparación</h3>
+                    <ul>
+                        <li>
+                            <h4>Paso</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
+                        </li>
+                        <li>
+                            <h4>Paso</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
+                        </li>
+                        <li>
+                            <h4>Paso</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
+                        </li>
+                        <li>
+                            <h4>Paso</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
+                        </li>
+                        <li>
+                            <h4>Paso</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
+                        </li>
+                        <li>
+                            <h4>Paso</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
+                        </li>
+                        <li>
+                            <h4>Paso</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section class="sobre_nosotros">
+            <h2 id="tituloSeccionNosotros" class="titulo_seccion">Sobre Nosotros</h2>
+            <div class="contenedor_sobre_nosotros">
+                <article class="sobre_nosotros_izquierda">
+                    <img src="./assets/img/example.png" alt="">
+                </article>
+                <article class="sobre_nosotros_derecha">
+                    <h5>Nuestro equipo</h5>
+                    <h6>Dillan Real Nieto<br>Eric Santiago Perez Bonilla<br>Juan Andres Mendieta</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illum minus odit pariatur deleniti officia accusantium, aut maiores rem itaque corrupti fugit ullam, tenetur alias culpa labore? Vel consequatur neque molestias quos sunt iure nulla delectus atque, illo expedita, quas dolor fugiat tempora tenetur velit corrupti dolorum? Possimus, minima atque?</p>
+                </article>
+            </div>
         </section>
     </main>
-    <footer>
-
+    <footer id="#tituloSeccionContacto">
+        <h2 id="tituloSeccionContacto" class="titulo_seccion">Contacto</h2>
+        <div class="contenedor_formulario">
+            <form id="formularioContacto" class="formulario_contacto">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="formContactoNombre">
+                <label for="correo">Correo:</label>
+                <input type="email" name="correo" id="formContactoCorreo">
+                <label for="comentario">Comentarios:</label>
+                <input type="text" name="comentario" id="formContactoComentario">
+                <button type="submit" id="formContactoBtnEnviar" class="btn_enviar">Enviar</button>
+            </form>
+        </div>
     </footer>
+    <script src="./js/app.js"></script>
 </body>
 </html>
