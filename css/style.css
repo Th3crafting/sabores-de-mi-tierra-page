@@ -128,6 +128,14 @@
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.carta_receta:hover{
+    border: 2px solid #ccc;
+    transform: scale(1.03) perspective(2000px);
+    cursor: pointer;
 }
 
 .carta_receta img{
@@ -175,6 +183,14 @@
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+    transition: 0.3s all ease;
+    cursor: pointer;
+}
+
+.carta_departamento:hover{
+    border: 2px solid #ccc;
+    transform: scale(1.03) perspective(2000px);
+    cursor: pointer;
 }
 
 .carta_departamento img{
