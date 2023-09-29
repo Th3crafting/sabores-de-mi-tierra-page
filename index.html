@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/logo-sabores-de-mi-tierra.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans+Symbols:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
@@ -10,24 +11,27 @@
     <script src="https://kit.fontawesome.com/005d86335c.js" crossorigin="anonymous"></script>
     <title>Sabores de mi tierra</title>
 </head>
-<body class="contenedor_principal">
+<body id="inicio" class="contenedor_principal">
     <header>
         <nav id="navContainer" class="nav_container">
-            <h1 class="titulo_pagina">Sabores de mi tierra.</h1>
+            <div class="titulo_pagina">
+                <img src="./assets/img/logo-sabores-de-mi-tierra.png" alt="">
+                <h1>Sabores de mi tierra.</h1>
+            </div>
             <ul class="nav_enlaces">
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="#tituloSeccionRecetas">Recetas</a></li>
-                <li><a href="#tituloSeccionDepartamentos">Departamentos</a></li>
-                <li><a href="#tituloSeccionRecetaDia">Receta del dia</a></li>
-                <li><a href="#tituloSeccionNosotros">Sobre nosotros</a></li>
-                <li><a href="#tituloSeccionContacto">Contactanos</a></li>
+                <li><a href="./index.html" class="icon_link">| Inicio </a></li>
+                <li><a href="#tituloSeccionRecetas" class="icon_link">| Recetas </a></li>
+                <li><a href="#tituloSeccionDepartamentos" class="icon_link">| Departamentos </a></li>
+                <li><a href="#tituloSeccionRecetaDia" class="icon_link">| Receta del dia </a></li>
+                <li><a href="#tituloSeccionNosotros" class="icon_link">| Sobre nosotros </a></li>
+                <li><a href="#tituloSeccionContacto" class="icon_link">| Contactanos</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="informacion">
             <aside class="parte_izquierda">
-                <img class="img_emp" src="./assets/img/empanas-fondo.png" alt="Fondo imagen empanadas">
+                <img class="img_emp" src="./assets/img/imagen-inicio.jpg" alt="Fondo imagen empanadas">
             </aside>
             <aside class="parte_derecha">
                 <article class="texto_informativo">
@@ -39,80 +43,100 @@
         </section>
         <section class="recetas">
             <h2 id="tituloSeccionRecetas" class="titulo_seccion">RECETAS</h2>
-            <div class="contenedor_cartas">
-                <article class="carta_receta">
-                    <img src="./assets/img/example-food.avif" alt="">
+            <div id="contenedorRecetas" class="contenedor_cartas">
+                <article id="cartaReceta1" class="carta_receta">
+                    <img src="./assets/img/receta1.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>BANDEJA PAISA</h3>
                     <p>Probablemente, la bandeja paisa sea el plato típico colombiano más conocido internacionalmente y aunque es una bomba de calorías, es una delicia imposible de resistir.</p>
                 </article>
-                <article class="carta_receta">
-                    <img src="./assets/img/example-food.avif" alt="">
+                <article id="cartaReceta2" class="carta_receta">
+                    <img src="./assets/img/receta2.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>EMPANADA DE POLLO</h3>
                     <p>Sumérgete en el sabor colombiano con nuestras empanadas de pollo crujientes por fuera, rellenas de sazonado pollo por dentro ¡Una experiencia única en cada mordisco!</p>
                 </article>
-                <article class="carta_receta">
-                    <img src="./assets/img/example-food.avif" alt="">
+                <article id="cartaReceta3" class="carta_receta">
+                    <img src="./assets/img/receta3.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>AREPAS DE QUESO COLOMBIANAS</h3>
                     <p>Descubrir la perfección de nuestras arepas colombianas, doradas, esponjosas y rellenas de queso derretido. Una delicia que combina tradición y sabor en cada bocado.</p>
                 </article>
-                <article class="carta_receta">
-                    <img src="./assets/img/example-food.avif" alt="">
+                <article id="cartaReceta4" class="carta_receta">
+                    <img src="./assets/img/receta4.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>AJIACO</h3>
                     <p>Plato emblemático que combina tiernas carnes, papas y sabores que te transportan a las montañas andinas.</p>
                 </article>
-                <article class="carta_receta">
-                    <img src="./assets/img/example-food.avif" alt="">
+                <article id="cartaReceta5" class="carta_receta">
+                    <img src="./assets/img/receta5.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>ARROZ CON POLLO</h3>
                     <p>Una mezcla perfecta de arroz, tiernos trozos de pollo y sabrosas especias que te transportarán directamente a la mesa de Colombia.</p>
                 </article>
-                <article class="carta_receta">
-                    <img src="./assets/img/example-food.avif" alt="">
+                <article id="cartaReceta6" class="carta_receta">
+                    <img src="./assets/img/receta6.jpg" alt="">
                     <div class="sombreado_cartas"></div>
-                    <h3>ARROZ DE LECHE</h3>
+                    <h3>ARROZ CON LECHE</h3>
                     <p>Dulce y delicioso arroz cocido a la perfección en leche y condimentos, cada cucharada es un abrazo cálido y reconfortante.</p>
                 </article>
-                <article class="carta_receta">
-                    <img src="./assets/img/example-food.avif" alt="">
+                <article id="cartaReceta7" class="carta_receta">
+                    <img src="./assets/img/receta7.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>CHANGUA</h3>
                     <p>Reconfortante, tradicional y cálido con ingredientes tan simples como leche, huevo y cilantro, este plato ofrece una experiencia única de sabor y textura.</p>
                 </article>
-                <article class="carta_receta">
-                    <img src="./assets/img/example-food.avif" alt="">
+                <article id="cartaReceta8" class="carta_receta">
+                    <img src="./assets/img/receta8.jpg" alt="">
                     <div class="sombreado_cartas"></div>
-                    <h3>TAMAL TOLIMENSE</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, fugiat.</p>
+                    <h3>TAMAL</h3>
+                    <p>Un plato reconfortante y tradicional que ofrece una experiencia única de sabor y textura. Preparado con ingredientes simples como leche, huevo y cilantro.</p>
                 </article>
+            </div>
+            <div id="contenedorCartaExpandida" class="contenedor_carta_expandida">
+                <div class="carta_expandida">
+                    <article class="header_receta_dia">
+                        <img id="imagenRecetaCartaExpandida" src="" alt="">
+                        <div class="sombreado_cartas_receta_expandida"></div>
+                        <h3 id="ContenitoTituloCartaExpandida"></h3>
+                        <h4>Ingredientes</h4>
+                        <div class="contenedor_listas">
+                            <ul id="listaIzquierdaCartaExpandida" class="lista_izquierda">
+                            </ul>
+                            <ul id="listaDerechaCartaExpandida" class="lista_derecha">
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="contenedor_preparacion">
+                        <h3>Preparación</h3>
+                        <p id="contenidoPreparacionCartaExpandida"></p>
+                    </article>
+                </div>
             </div>
         </section>
         <section class="departamentos">
             <h2 id="tituloSeccionDepartamentos" class="titulo_seccion">Departamentos</h2>
             <div class="contenedor_cartas">
                 <article class="carta_departamento">
-                    <img src="./assets/img/example-food.avif" alt="">
+                    <img src="./assets/img/cundinamarca.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>Cundinamarca</h3>
                     <h4>Bogotá</h4>
                 </article>
                 <article class="carta_departamento">
-                    <img src="./assets/img/example-food.avif" alt="">
+                    <img src="./assets/img/bolivar.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>Bolivar</h3>
                     <h4>Cartagena</h4>
                 </article>
                 <article class="carta_departamento">
-                    <img src="./assets/img/example-food.avif" alt="">
+                    <img src="./assets/img/narinho.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>Nariño</h3>
                     <h4>Pasto</h4>
                 </article>
                 <article class="carta_departamento">
-                    <img src="./assets/img/example-food.avif" alt="">
+                    <img src="./assets/img/antioquia.jpg" alt="">
                     <div class="sombreado_cartas"></div>
                     <h3>Antioquia</h3>
                     <h4>Medellín</h4>
@@ -123,65 +147,36 @@
             <h2 id="tituloSeccionRecetaDia" class="titulo_seccion">Receta del Día</h2>
             <div class="contenedor_receta_dia">
                 <article class="header_receta_dia">
-                    <img src="./assets/img/example-food.avif" alt="">
+                    <img src="./assets/img/receta1.jpg" alt="">
                     <div class="sombreado_cartas"></>
                     <h3>Bandeja paisa</h3>
                     <h4>Ingredientes</h4>
                     <div class="contenedor_listas">
                         <ul class="lista_izquierda">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>1 diente de ajo</li>
+                            <li>sal al gusto</li>
+                            <li>4 huevos</li>
+                            <li>aceite</li>
+                            <li>200 gramos de cebolla cabezona</li>
+                            <li>3 tomates</li>
+                            <li>2 aguacates</li>
+                            <li>1 hoja de laurel</li>
+                            <li>4 chorizos</li>
                         </ul>
                         <ul class="lista_derecha">
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>1 libra de arroz</li>
+                            <li>1 pizca de comino</li>
+                            <li>1 libra de chicharrón</li>
+                            <li>2 plátanos maduros</li>
+                            <li>350 gramos de carne picada de ternera</li>
+                            <li>1 libra de frijol</li>
+                            <li>4 arepas de maíz</li>
                         </ul>
                     </div>
                 </article>
                 <article class="contenedor_preparacion">
                     <h3>Preparación</h3>
-                    <ul>
-                        <li>
-                            <h4>Paso</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
-                        </li>
-                        <li>
-                            <h4>Paso</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
-                        </li>
-                        <li>
-                            <h4>Paso</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
-                        </li>
-                        <li>
-                            <h4>Paso</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
-                        </li>
-                        <li>
-                            <h4>Paso</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
-                        </li>
-                        <li>
-                            <h4>Paso</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
-                        </li>
-                        <li>
-                            <h4>Paso</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta fugit ipsam blanditiis debitis commodi molestiae consequatur exercitationem maiores provident magnam.</p>
-                        </li>
-                    </ul>
+                    <p><b>Paso 1/7</b><br>El día anterior dejar reposar en un recipiente con agua los frijoles.<br><br><b>Paso 2/7</b><br>Para preparar el arroz, agregamos 2 tazas de arroz y el doble de agua es decir, 4 tazas de agua. Cuando el agua hierva añadir el arroz y la hoja de laurel. Cocinar a fuego medio durante 15 minutos. Apagar el fueggo y dejar reposar cinco minutos tapando el recipiente.<br><br><b>Paso 3/7</b><br>Para los plátanos vamos a preparar una sartén con aceite. Sacar tajadas a los plátanos y freír hasta que estén dorados, luego dejar reposar en un plato con papel absorbente o de cocina.<br><br><b>Paso 4/7</b><br>Procedemos a preparar el hogao. Corta la cebolla y el tomate en dados, picar el ajo en trocitos muy pequeños. Sofreír la cebolla en aceite durante 4 minutos, sazonar con sal y agregar el tomate, incorporar el ajo y el comino, mezclar bien y cocinar durante 2 minutos.<br><br><b>Paso 5/7</b><br>Escurrir los frijoles y llevarlos a la olla de presión, añadir el hogao. Cubre con agua y dejar cocinar por 30 minutos aproximadamente.<br><br><b>Paso 6/7</b><br>En una sartén la carne y el chorizo hasta que estén bien dorados. Luego retirar y en la misma sartén freír los huevos. En otra sartén fritar los chicharrones al gusto.<br><br><b>Paso 7/7</b><br>Para montar la bandeja paisa, colocamos el arroz, los frijosles, las tajadas, la carne picada, el chorizo, los chicharrones y el huevo (encima del arroz). Cortar el aguacate y adicionar las arepas de maíz y ¡listo a disfrutar!</p>
                 </article>
             </div>
         </section>
@@ -189,16 +184,17 @@
             <h2 id="tituloSeccionNosotros" class="titulo_seccion">Sobre Nosotros</h2>
             <div class="contenedor_sobre_nosotros">
                 <article class="sobre_nosotros_izquierda">
-                    <img src="./assets/img/example.png" alt="">
+                    <img class="logo_sobre_nosotros" src="./assets/img/logo-sabores-de-mi-tierra.png" alt="">
                 </article>
                 <article class="sobre_nosotros_derecha">
                     <h5>Nuestro equipo</h5>
                     <h6>Dillan Real Nieto<br>Eric Santiago Perez Bonilla<br>Juan Andres Mendieta</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis illum minus odit pariatur deleniti officia accusantium, aut maiores rem itaque corrupti fugit ullam, tenetur alias culpa labore? Vel consequatur neque molestias quos sunt iure nulla delectus atque, illo expedita, quas dolor fugiat tempora tenetur velit corrupti dolorum? Possimus, minima atque?</p>
+                    <p>Nuestra pasión es explorar y compartir las riquezas culinarias de Colombia. En Sabores de mi tierra, te llevamos a un viaje a través de la deliciosa diversidad de sabores y tradiciones de la gastronomía colombiana. Desde las montañas de los Andes hasta las costas del Caribe, nuestra misión es celebrar y compartir las recetas auténticas y los secretos culinarios que hacen que la comida colombiana sea tan especial. Únete a nosotros en este emocionante recorrido gastronómico mientras descubrimos los platos emblemáticos, los ingredientes frescos y la rica herencia culinaria que define la cocina de Colombia. ¡Bienvenido a nuestro mundo de sabor y tradición!</p>
                 </article>
             </div>
         </section>
     </main>
+    <a href="#inicio" class="boton_subir"><i class="fa-solid fa-arrow-up"></i></a>
     <footer id="#tituloSeccionContacto">
         <h2 id="tituloSeccionContacto" class="titulo_seccion">Contacto</h2>
         <div class="contenedor_formulario">

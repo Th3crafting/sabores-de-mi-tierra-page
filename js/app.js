@@ -4,6 +4,115 @@
 const navBar = document.getElementById('navContainer');
 const form = document.getElementById('formularioContacto');
 const enviar = document.getElementById('formContactoBtnEnviar');
+const botonSubir = document.querySelector(".boton_subir");
+const contenedorRecetas = document.getElementById('contenedorRecetas');
+const contenedorRecetaExpandida = document.getElementById('contenedorCartaExpandida');
+const cartaExpandida = document.querySelector(".carta_expandida");
+const imagenReceta = document.getElementById('imagenRecetaCartaExpandida');
+const tituloReceta = document.getElementById('ContenitoTituloCartaExpandida');
+const listaIzquierda = document.getElementById('listaIzquierdaCartaExpandida');
+const listaDerecha = document.getElementById('listaDerechaCartaExpandida');
+const preparacionReceta = document.getElementById('contenidoPreparacionCartaExpandida');
+
+// ------● Código para el botón de subir ●------
+
+botonSubir.addEventListener('click', function (e) {
+    e.preventDefault();
+    const inicio = window.scrollY;
+    const destino = 0;
+    const distancia = destino-inicio;
+    const duracion = 800;
+
+    let inicioAnimacion = null;
+    function animarScroll(tiempo){
+        if(!inicioAnimacion) inicioAnimacion = tiempo;
+
+        const tiempoTranscurrido = tiempo-inicioAnimacion;
+        const posicionActual = inicio+distancia*(tiempoTranscurrido/duracion);
+        window.scrollTo(0, posicionActual);
+
+        if(tiempoTranscurrido<duracion){
+            requestAnimationFrame(animarScroll);
+        }
+    }
+    requestAnimationFrame(animarScroll);
+});
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 200){
+        botonSubir.style.display = "block";
+    }else {
+        botonSubir.style.display = "none";
+    }
+});
+
+// ------● Código para expansión de las recetas ●------
+function expandirCarta(idReceta) {
+    contenedorRecetaExpandida.style.display = 'flex';
+    fetch('../assets/json/recetas.json')
+        .then(response => response.json())
+        .then(data => {
+            const identificadorReceta = idReceta;
+            const receta = data[identificadorReceta];
+
+            imagenReceta.src = receta.imagen;
+            tituloReceta.textContent = receta.titulo;
+
+            receta.ingredientes.forEach((ingrediente, index) => {
+                const itemLista = document.createElement('li');
+                itemLista.textContent = ingrediente;
+
+                if(index<=8){
+                    listaIzquierda.appendChild(itemLista);
+                }else{
+                    listaDerecha.appendChild(itemLista);
+                }
+            });
+
+            const descripcionReceta = receta.preparacion;
+
+            document.getElementById('contenidoPreparacionCartaExpandida').innerHTML = descripcionReceta;
+        })
+        .catch(error => {
+            console.error('Error al cargar los datos : ', error);
+        });
+    
+    setTimeout(() => {
+        cartaExpandida.style.transform = 'scale(1)';
+    }, 100);
+
+    setTimeout(() => {
+
+    }, 300);
+}
+
+function cerrarCartaExpandida() {
+    cartaExpandida.style.transform = 'scale(0.7)';
+    setTimeout(() => {
+        contenedorRecetaExpandida.style.display = 'none';
+
+        listaIzquierda.innerHTML = '';
+        listaDerecha.innerHTML = '';
+        document.getElementById('contenidoPreparacionCartaExpandida').innerHTML = '';
+    }, 300);
+}
+
+contenedorRecetas.addEventListener('click', (e) => {
+    const cartaClic = e.target.closest('.carta_receta');
+    const idReceta = cartaClic.id;
+    console.log(idReceta);
+    if(cartaClic){
+        expandirCarta(idReceta);
+    }
+});
+
+contenedorRecetaExpandida.addEventListener('click', (e) => {
+    if(e.target === contenedorRecetaExpandida){
+        cerrarCartaExpandida();
+    }
+});
+
+// ------● Código validación del formulario ●------
 
 // Objeto para validación del formulario
 const formValid = {
@@ -71,6 +180,8 @@ form.addEventListener('change', (e) => {
             break;
     }
 })
+
+// ------● Animacion navBar ●------
 
 // Animacion de la navBar
 let prevScrollPos = window.scrollY;
